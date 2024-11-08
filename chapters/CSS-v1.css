@@ -78,10 +78,11 @@ figure {
 
 /*color text gradients by Goddess_of_the_arena  https://archiveofourown.org/works/51309787/chapters/143392030#workskin and https://archiveofourown.org/works/58623079/chapters/149366104*/  
 
+
 .textgr-bluegreen {
     background: linear-gradient(to right, #8F0FFF 0%, #05C1FF 25%, #00FF00 50%, #05C1FF 75%, #8F0FFF 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
 .textgr-rainbow {
@@ -472,3 +473,39 @@ dl.stats {
     font-weight:bold;
     text-align:center;
   }
+
+/*red pill blue pill*/
+
+.red-pill {
+    display:block;
+    border-radius: 15px;
+    padding:5px;
+    margin:10px;
+    background-color: red;
+    width: 5em;
+    height:auto;
+    text-align:center;
+   color:white;
+   font-weight:bold;
+   text-wrap: wrap;
+   margin-left: auto;
+   margin-right: auto;
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+ }
+
+ .blue-pill {
+     display:block;
+    border-radius: 15px;
+    padding:5px;
+    margin:10px;
+    background-color: blue;
+    width: 5em;
+    height:auto;
+    text-align:center;
+   color:white;
+   font-weight:bold;
+   text-wrap: wrap;
+   margin-left: auto;
+   margin-right: auto;
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+ }
