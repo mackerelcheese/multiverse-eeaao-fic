@@ -1,0 +1,474 @@
+/*figure parser*/
+figure {
+    max-width: 100%;
+    max-height: 100%;
+    overflow:hidden;
+}
+
+/*housekeeping*/ 
+
+/*containers + misc*/
+
+.flexcon {
+    display:flex;
+    width:100%;
+    height:auto;
+}
+
+.gen-flexcon {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin:auto;
+}
+
+.hide {
+    display: none;
+}
+
+.middle {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*fonts family*/
+
+.TNR {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.mono {
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+.arial {
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.cursive {
+    font-family: 'Lucida Handwriting', cursive;
+}
+
+.comicsans {
+    font-family: 'Comic Sans MS', cursive;
+  }
+
+/*font color*/
+
+.txt-purple {
+    color:#7101c9;
+}
+
+.txt-blue {
+    color:blue;
+}
+
+.txt-green {
+    color:greenyellow;
+}
+
+/*font size*/
+
+.txt-big {
+    font-size: 1.5em;
+}
+
+
+/*color text gradients by Goddess_of_the_arena  https://archiveofourown.org/works/51309787/chapters/143392030#workskin and https://archiveofourown.org/works/58623079/chapters/149366104*/  
+
+.textgr-bluegreen {
+    background: linear-gradient(to right, #8F0FFF 0%, #05C1FF 25%, #00FF00 50%, #05C1FF 75%, #8F0FFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+.textgr-rainbow {
+    background: linear-gradient(to right, #F8295A 0%, #FFA500 25%, #EAE326 40%, #37EA1B 60%, #2A97EA 80%, #B926F8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.textgr-psy {
+    background: linear-gradient(to right,#ff1daa 0%, #5fbeff 25%, #6bd13e 40%, #ff9500 60%, #2A97EA 80%, #fdff00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*letter spacing*/
+
+.l-squash {
+    letter-spacing: -2px;
+}
+
+.l-strech1 {
+    letter-spacing: 2px;
+}
+
+.l-strech2 {
+    letter-spacing: 3px;
+}
+
+.l-strech3 {
+    letter-spacing: 5px;
+}
+
+.l-strech4 {
+    letter-spacing: 8px;
+}
+
+/*inspired by and adapted from  glitch text by goddess of arena https://archiveofourown.org/works/57728626?view_full_work=true#main */ 
+
+.gt-head {
+position: relative; 
+}
+  
+.gt-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   margin: 0;
+} 
+
+.gt-vertical {
+    writing-mode: vertical-lr;
+    margin-left:50%;
+}
+
+.gt-upsidedown {
+    transform: rotate(180deg);
+    text-align: center;
+}
+
+/*split  text*/
+
+
+  .tiltcon {
+    display: flex;
+    align-items:center;
+    width: 50%;
+    height:5em;
+    position:relative;
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+  }
+  
+  .tilt-R {
+    transform: rotate(30deg);
+    padding-left:2em;
+    position:absolute;
+  } 
+  
+  .tilt-L {
+    transform: rotate(-30deg);
+    text-align:right;
+    padding-right:2em;
+    position:absolute;
+    right:0px;
+  }  
+
+
+
+/*split screens*/ 
+  
+.eqcol-left {
+    flex: 50%;
+    padding: 10px;
+    border-right: 2px solid rgb(82, 209, 32);
+}
+  
+.eqcol-right {
+    flex: 50%;
+    padding: 10px;
+}
+
+/*base boss kirby by spookytesting at https://archiveofourown.org/works/38129254/chapters/95252452#workskin*/
+
+.ksa-boss {
+    background-color: #ef009b;
+    box-shadow: -9px -14px 0 #7101c9, 8px 8px 0 rgba(0, 0, 0, 0.5);
+    margin: 40px auto 30px;
+    padding: 5px 20px 0px;
+    transform: skew(-10deg);
+    width: max-content;
+    max-width: 80%;
+}
+  
+.ksa-boss br {
+    display: none;
+}
+  
+.ksa-boss p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+  
+.ksa-boss span:first-of-type {
+    color: white;
+    display: block;
+    font-size: 1.5em;
+    font-family: "Forte", "Silom", "Lucida Grande";
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: -17.5px;
+    text-shadow: 2px 2px #7101c9;
+    transform: skew(10deg);
+    position: relative;
+    right: 6px;
+    bottom: 16.5px;
+    width: 100%;
+}
+  
+.ksa-boss span:last-of-type {
+    color: #3f1da5;
+    display: inline-block;
+    font-family: "Impact", "Franklin Gothic Condensed", "Lucida Grande";
+    font-size: 2.8em;
+    line-height: 1.1;
+    margin: 6px auto 8px;
+    text-shadow: 2px 2px white;
+    transform: skew(10deg);
+}
+  
+.ksa-boss b {
+    font-weight: 500;
+}
+  
+/*ao3 skin on ao3 by deciMae at https://archiveofourown.org/works/58827868*/ 
+  
+h4.heading {
+    font-weight: initial;
+}
+  
+details{
+    margin:initial;
+}
+  
+p.kudos {
+    padding: .5em .5em .5em 60px;
+    margin: 2em 0;
+    min-height: 50px;
+    font-size: 14px;
+}
+  
+.comment-group{
+    display:block;
+}
+  
+ul.actions{
+    margin: initial;
+    padding: initial;
+    padding: .429em .25em .25em 0;
+}
+  
+.actions li{
+    display: initial;
+    margin-inline-start: initial;
+}
+  
+ol.thread{
+    padding: initial;
+    margin: initial;
+}
+  
+li.comment{
+    margin: 0;
+}
+  
+.thread li {
+    list-style-type: none;
+    margin-block:.5em;
+}
+  
+img.icon {
+    width: 100px;
+    margin: 0;
+}
+  
+h3.heading {
+    border-bottom: 1px solid;
+}
+  
+h3.byline {
+    border: 0;
+}
+  
+.preface blockquote {
+    margin-inline-start: initial;
+    padding: initial;
+    border-inline-start: initial;
+}
+  
+  
+h2.title {
+    margin: initial;
+}
+  
+ol.thread li blockquote {
+    padding: initial;
+    border-inline-start: initial;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: .643em;
+    margin-right: .643em;
+}
+  
+h3 a, h4 a {
+    color: #666;
+    text-decoration: none;
+    border-bottom: solid 1px;
+}
+  
+h4.byline{ 
+    text-align: left;
+}
+  
+.work dt {
+    font-weight: initial;
+    display: initial;
+}
+  
+.work dd {
+    display: initial;
+    line-height: initial;
+    margin: 0;
+}
+  
+dl.meta {
+    border: 1px solid #ccc;
+    margin: initial;
+}
+  
+.work ul {
+    margin: initial;
+    padding-bottom: 0.643em;
+}
+  
+dt.stats{
+    float:left;
+}
+  
+dl.stats {
+    margin-left: 1em;
+}
+  
+.stats .stats dd {
+    margin-bottom: 0;
+}
+  
+.wrapper {
+    font-size: .92592em;
+}
+  
+.warning a {
+    font-weight: 700;
+}
+  
+.work > dt {
+    margin-right: -1em;
+}
+
+/*comic thought text by Demigod of Agni https://archiveofourown.org/works/48774883/chapters/124267306#main*/
+
+.thoughtread {
+    color: black;
+    font-size: 0.9em;
+    transform: skew(-3deg);
+    font-family: marker felt, comic sans ms, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+    white-space: wrap;
+    max-width: auto;
+    position: relative;
+    background: url(https://static.vecteezy.com/system/resources/previews/012/994/584/non_2x/yellow-halftone-texture-background-vector.jpg) center center repeat;
+    background-size: 200px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    box-shadow: 1.5px 1px black;
+}
+
+/*deadpool thinking boxes by La_Temperanza https://archiveofourown.org/collections/A_Guide_to_Coding_and_Fanworks/works/4384112*/
+
+.dp-ybox {
+    background-color: #fff799;
+    background: radial-gradient(circle, #fffeee, #fffbcc, #fff799);
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right:auto;
+    padding-top: 2px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    font-family: "Comic Sans MS", "Chalkboard SE", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    display: table;
+    color: #000000;
+}
+  
+.dp-wbox {
+    background-color: #ffffff;
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+    margin-left: 0px;
+    padding-top: 2px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    font-family: "Courier New", Courier;
+    text-align: center;
+    font-size: medium;
+    display: table;
+    color: #000000;
+}
+
+/*hp tick*/
+
+.hp-boxbox {   
+    display:flex;
+    width:100%
+}
+
+.hp-box {
+    display:flex;
+    width:auto;
+    height:auto;
+    padding:3px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.hp-img1 {
+    width:1.5em;
+    height: 1.5em;
+    padding:0px;
+}
+
+.hp-img2 {
+    width:1.5em;
+    height: 1.5em;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    padding:0px;
+}
+
+
+/*tattoo tick*/
+
+.tattoo-tick {
+    text-shadow: 2px 2px #FF0000;
+    font-size:2em;
+    font-weight:bold;
+    text-align:center;
+  }
