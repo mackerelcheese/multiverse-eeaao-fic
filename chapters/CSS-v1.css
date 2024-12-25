@@ -185,13 +185,36 @@ position: relative;
 .eqcol-left {
     flex: 50%;
     padding: 10px;
-    border-right: 2px solid rgb(82, 209, 32);
+    border-right: 2px solid;
 }
   
 .eqcol-right {
     flex: 50%;
     padding: 10px;
 }
+
+.b-green {
+    border-right: 2px solid rgb(82, 209, 32);
+}
+
+.b-yellow {
+    border-right: 2px solid yellow;
+}
+
+.b-red {
+    border-right: 2px solid red;
+}
+
+.b-greenyellow {
+    border-image: linear-gradient( rgb(82, 209, 32) 0%, yellow 100%);
+    border-image-slice: 1;
+}
+
+.b-yellowred {
+    border-image: linear-gradient( yellow 0%, red 100%);
+    border-image-slice: 1;
+}
+
 
 /*base boss kirby by spookytesting at https://archiveofourown.org/works/38129254/chapters/95252452#workskin*/
 
