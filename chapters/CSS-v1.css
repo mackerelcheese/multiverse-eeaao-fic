@@ -8,8 +8,8 @@
 /*housekeeping*/ 
 .mobilecon {
     width:300px;
-    margin-left:0px;
-    margin-right:0px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .SOB-thought {
@@ -86,7 +86,6 @@
     font-size: 1.5em;
 }
 
-
 /*color text gradients by Goddess_of_the_arena  https://archiveofourown.org/works/51309787/chapters/143392030#workskin and https://archiveofourown.org/works/58623079/chapters/149366104*/  
 
 
@@ -154,7 +153,6 @@ position: relative;
 }
 
 /*split  text*/
-
 
   .tiltcon {
     display: flex;
