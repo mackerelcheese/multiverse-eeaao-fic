@@ -45,7 +45,7 @@
 }
 
 .img-mid {
-    height:1em; 
+    height:0.80em; 
     max-width: 300px;
     margin-left: auto;
     margin-right: auto;
@@ -584,7 +584,7 @@ dl.stats {
 .neontick {
     font-family:Brush Script MT, Brush Script Std, cursive;
     text-align:center;
-    font-size:1.5em;
+    font-size:0.85em;
     color: #fff;
     text-shadow:
         0 0 4px #fff,
