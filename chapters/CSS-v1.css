@@ -630,7 +630,7 @@ dl.stats {
     align-items: center;
     justify-content: center;
     color: black;
-    background: white;
+    background: #D3D3D3;
     transition: 0.5s;
 } 
    
@@ -661,17 +661,17 @@ dl.stats {
 }
 
 .watch-greenglow {
-    box-shadow: green 0px 5px 35px;
+    box-shadow: #023020 0px 5px 35px;
 }
     
 .watch-greenglow:hover {
-    color:black;  
-    background:green;
-    box-shadow: 0 0 0 30px green,
-                0 0 0 60px green,
-                0 0 0 100px green,
-                0 0 0 120px green,
-                0 0 0 200px green;
+    color:white;  
+    background:#023020;
+    box-shadow: 0 0 0 30px #023020,
+                0 0 0 60px #023020,
+                0 0 0 100px #023020,
+                0 0 0 120px #023020,
+                0 0 0 200px #023020;
 }
 
 
