@@ -46,7 +46,7 @@
 
 .img-mid {
     height:0.80em; 
-    max-width: 300px;
+    width:auto;
     margin-left: auto;
     margin-right: auto;
 }
@@ -587,14 +587,14 @@ dl.stats {
     font-size:0.85em;
     color: #fff;
     text-shadow:
+        0 0 2px #fff,
         0 0 4px #fff,
-        0 0 11px #fff,
+        0 0 6px #B026FF,
+        0 0 12px #B026FF,
         0 0 15px #B026FF,
+        0 0 18px #B026FF,
         0 0 20px #B026FF,
-        0 0 30px #B026FF,
-        0 0 40px #B026FF,
-        0 0 50px #B026FF,
-        0 0 60px #B026FF
+        0 0 30px #B026FF
   }
 
 /*watch display*/ 
