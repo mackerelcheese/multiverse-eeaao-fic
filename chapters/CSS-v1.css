@@ -32,6 +32,9 @@
     width: 100%;
     height: auto;
     margin:auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .hide {
@@ -584,7 +587,7 @@ dl.stats {
 .neontick {
     font-family:Brush Script MT, Brush Script Std, cursive;
     text-align:center;
-    font-size:0.85em;
+    font-size:4.2rem;
     color: #fff;
     text-shadow:
         0 0 2px #fff,
