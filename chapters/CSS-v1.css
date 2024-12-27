@@ -44,6 +44,14 @@
     text-align: center;
 }
 
+.img-mid {
+    height:2em; 
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 /*fonts family*/
 
 .TNR {
@@ -571,6 +579,24 @@ dl.stats {
     font-size:1.5em;
   }
 
+/*neon tick*/
+
+.neontick {
+    font-family:Brush Script MT, Brush Script Std, cursive;
+    text-align:center;
+    font-size:4em;
+    color: #fff;
+    text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 15px #B026FF,
+        0 0 20px #B026FF,
+        0 0 30px #B026FF,
+        0 0 40px #B026FF,
+        0 0 50px #B026FF,
+        0 0 60px #B026FF
+  }
+
 /*watch display*/ 
 .watch-con {
     display:flex;
@@ -601,8 +627,8 @@ dl.stats {
     text-align: center;
     align-items: center;
     justify-content: center;
-    color: white;
-    background: #555555;
+    color: black;
+    background: white;
     transition: 0.5s;
 } 
    
@@ -665,4 +691,73 @@ dl.stats {
      height:100px; 
 }
   
-  
+/*Jump map*/
+
+.jump-con-green {
+  display: block; 
+  border: 2px solid green;
+  width:9em;
+  height:auto;
+  padding:5px;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.jump-con-yl {
+  display: block; 
+  border: 2px solid yellow;
+  width:9em;
+  height:auto;
+  padding:5px;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.jump-line-g {
+  display:block;
+  width:50%;
+  height:6em;
+  margin-left:0px;
+  border-right:4px solid green;
+}
+
+.jump-line-y {
+  display:block;
+  width:50%;
+  height:6em;
+  margin-left:0px;
+  border-right:4px solid yellow;
+}
+
+.jump-linegr-g {
+  display:block;
+  width:50%;
+  height:6em;
+  margin-left:0px;
+  border-right:4px solid;
+  border-image: linear-gradient(to bottom, green 0%, yellow 100%);
+  border-image-slice: 1;  
+}
+
+.jump-linegr-y {
+  display:block;
+  width:50%;
+  height:6em;
+  margin-left:0px;
+  border-right:4px solid;
+  border-image: linear-gradient(to bottom, yellow 0%, red 100%);
+  border-image-slice: 1;  
+}
+
+.jump-con-red {
+  display: block; 
+  border: 2px solid red;
+  width:9em;
+  height:auto;
+  padding:5px;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+}
