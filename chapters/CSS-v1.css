@@ -585,9 +585,8 @@ dl.stats {
 /*neon tick*/
 
 .neontick {
-    font-family:Brush Script MT, Brush Script Std, cursive;
     text-align:center;
-    font-size:4.2rem;
+    font-size:3em;
     color: #fff;
     text-shadow:
         0 0 2px #fff,
