@@ -24,6 +24,15 @@
     border:1px solid black;
 }
 
+.mid-split {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
 /*--------------------------------------------------------------------------*/
 /*containers + misc*/
 
@@ -39,7 +48,8 @@
     text-align: center;
     width: 100%;
     height: auto;
-    margin:auto;
+    margin-left:auto;
+    margin-right:auto;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -644,8 +654,6 @@ dl.stats {
       0 0 40px #B026FF,
       0 0 80px #B026FF,
       0 0 90px #B026FF,
-      0 0 100px #B026FF,
-      0 0 150px #B026FF
 }
 /*watch display*/ 
 .watch-con {
@@ -1100,24 +1108,19 @@ hidden when the defails is open.
 /*exploding text*/
 
 .explode-con { 
-  display: flex;
-  flex-direction: column;
   max-width:300px;
+  height: 2em;
+  display: flex;
+  margin-left:auto;
+  margin-right: auto;
   justify-content: center;
   align-items: center; 
   text-align: center;
-  margin: auto;
-  padding: 10px;
-  overflow: hidden;
-}
-
-.explode-r { 
-  width: auto; 
-  height: auto; 
+  flex-direction: column; 
   background: transparent; 
-  transition: 0.8s; 
-} 
-        
+  transition: 0.8s;
+}
+     
 .explode-r:hover {
     background: #FC0019;
     color:white;
@@ -1127,18 +1130,6 @@ hidden when the defails is open.
               0 0 0 120px #FC0019,
               0 0 0 200px #FC0019 
 }
-
-.explode-bl { 
-    width: auto; 
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    text-align: center;
-    flex-direction: column; 
-    background: transparent; 
-    transition: 0.8s; 
-  } 
           
 .explode-bl:hover {
     background: black;
@@ -1158,29 +1149,34 @@ hidden when the defails is open.
     margin-left:auto;
     margin-right:auto;
     border-top:2px solid black; 
-    border-bottom:2px solid black;  
-  }
-  
-  .rs-headericon {
-    padding:5px;
-    height:2.5em;
-    width:10px;
-  }
-  
-  .rs-logo {
-    height:2.3em;
-    margin-top:auto;
-    margin-bottom:auto;
-  }
-  .rs-subscribe {
-    display:flex;
-    padding:5px;
-    height:50px;
-    width:50px;
+    border-bottom:2px solid black; 
     text-align:center; 
     justify-content:center;
     align-items:center;
-    margin-right:10px;
+    
+  }
+  
+  .rs-headericon {
+    padding:15px;
+    height:2.5em;
+    width:25px;
+  }
+  
+  .rs-logo {
+    height:2em;
+    width:auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left:auto;
+    margin-right: auto;
+  }
+  .rs-subscribe {
+    height:auto;
+    width:30px;
+    padding:5px;
+    text-align:center; 
+    justify-content:center;
+    align-items:center;
     margin-left:auto;
     font-size:0.6em;
   }
