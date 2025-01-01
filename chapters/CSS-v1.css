@@ -46,13 +46,13 @@
     display: flex;
     align-items: center;
     text-align: center;
-    width: 100%;
+    width: 300px;
     height: auto;
     margin-left:auto;
     margin-right:auto;
-    justify-content: center;
-    align-items: center;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .hide {
@@ -67,7 +67,7 @@
 
 .img-mid {
     height:0.80em; 
-    width:auto;
+    max-width:300px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -766,7 +766,11 @@ dl.stats {
 }
    
 .gps-pin {
-     height:100px; 
+    display:block; 
+    height:100px;
+    max-width:300px; 
+    margin-left: auto;
+    margin-right:auto;
 }
 
 /*--------------------------------------------------------------------------*/
@@ -1171,7 +1175,7 @@ hidden when the defails is open.
     border-top:2px solid black; 
     border-bottom:2px solid black; 
     text-align:center; 
-    justify-content:center;
+    justify-content:space-evenly;
     align-items:center;
     
   }
@@ -1187,13 +1191,14 @@ hidden when the defails is open.
     width:auto;
     margin-top:auto;
     margin-bottom:auto;
-    margin-left:auto;
-    margin-right: auto;
+    margin-left:5px;
+    margin-right:5px;
+  
   }
   .rs-subscribe {
     height:auto;
     width:30px;
-    padding:5px;
+    padding:15px;
     text-align:center; 
     justify-content:center;
     align-items:center;
