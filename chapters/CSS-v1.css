@@ -180,6 +180,24 @@
     -webkit-text-fill-color: transparent;
 }
 
+.textgr-huff {
+  background: linear-gradient(to right,#ecb939 0%, #f0c75e 25%, #726255 50%, #372e29 75%, #000000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.textgr-sly {
+  background: linear-gradient(to right,#1a472a 0%, #2a623d 25%,	#5d5d5d 50%, #aaaaaa 75%, #000000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.textgr-grff {
+  background: linear-gradient(to right,#1a472a 0%, #2a623d 25%,	#5d5d5d 50%, #aaaaaa 75%, #000000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /*--------------------------------------------------------------------------*/
 /*letter spacing*/
 
@@ -657,38 +675,40 @@ dl.stats {
 }
 /*watch display*/ 
 .watch-con {
-    display:flex;
-    width: 150px;
-    height:150px; 
-    padding:3px;
-    border:5px solid #C0C0C0;
-    margin-right: auto;
-    margin-left:auto;
-    border-radius: 30px;
-    color: #6ACF65;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    word-wrap: break-word;
-    box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), 0 4px 6px rgba(0,0,0,0.45);
-    overflow:hidden;
-    flex-direction: column;
-    font-size:1.2em;
+  display:flex;
+  width: 150px;
+  height:150px; 
+  padding:3px;
+  border:5px solid #C0C0C0;
+  margin-right: auto;
+  margin-left:auto;
+  border-radius: 30px;
+  color: #6ACF65;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  word-wrap: break-word;
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), 0 4px 6px rgba(0,0,0,0.45);
+  overflow:hidden;
+  flex-direction: column;
+  font-size:1.2em;
+  font-family: monospace, monospace;
 } 
 
+
 .watch-button{
-    display:flex;
-    border-radius: 25px;
-    height: 2em;
-    width: 3em;
-    padding: 0.5em;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    background: #D3D3D3;
-    transition: 0.5s;
-} 
+  display:flex;
+  height: 2em;
+  width: 3em;
+  padding: 5px;
+  border-radius:5px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background: #6ACF65;
+  transition: 0.5s;
+ } 
    
 .watch-redglow {
    box-shadow: #FF0000 0px 5px 35px;
@@ -709,7 +729,7 @@ dl.stats {
     
 .watch-yellowglow:hover {
       background:yellow;
-      box-shadow: 0 0 0 30px yellow,
+      box-shadow: 0 0 0 30px #ffff00,
                   0 0 0 60px yellow,
                   0 0 0 100px yellow,
                   0 0 0 120px yellow,
@@ -1109,7 +1129,7 @@ hidden when the defails is open.
 
 .explode-con { 
   max-width:300px;
-  height: 2em;
+  height: auto;
   display: flex;
   margin-left:auto;
   margin-right: auto;
