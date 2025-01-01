@@ -3,6 +3,8 @@
     margin-right:0px;
     margin-left:0px;
     max-width:100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /*--------------------------------------------------------------------------*/
@@ -1157,6 +1159,7 @@ hidden when the defails is open.
           
 .explode-bl:hover {
     background: black;
+    color:black;
     box-shadow: 0 0 0 30px black,
                 0 0 0 60px black,
                 0 0 0 100px black,
