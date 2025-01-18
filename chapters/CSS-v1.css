@@ -671,10 +671,39 @@ dl.stats {
     font-size:1.5em;
   }
 
-  /*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+/*fade by jihnari*/
+.fadeout {
+  position: relative;
+}
+.fadeout::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(255,255,255, 0), white);
+}
+.fadein {
+  position: relative;
+}
+.fadein::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(to bottom, white, rgba(255,255,255, 0));
+}
+.text-color-gray {
+  color: #9F9FA1;
+}
+.text-size-12{
+  font-size:1.2em;
+}
+
+/*--------------------------------------------------------------------------*/
 /*neon tick*/
 
-.neon-text { 
+.neon-tick { 
   display:flex;
   align-items:center;
   justify-content:center;
@@ -688,15 +717,29 @@ dl.stats {
   font-family:Brush Script MT, Brush Script Std, cursive;
   text-align:center;
   font-size:3em;
-  color: #fff;
-  text-shadow:
-      0 0 4px #fff,
-      0 0 11px #fff,
-      0 0 19px #B026FF,
-      0 0 40px #B026FF,
-      0 0 80px #B026FF,
-      0 0 90px #B026FF,
+  color: white;
 }
+
+.neon-pink {
+  text-shadow: 0 0 3px #FF6EFF, 0 0 5px #FF6EFF, 0 0 7px #FF6EFF;
+}
+
+.neon-yellow {
+  text-shadow: 0 0 3px #FFFF66, 0 0 5px #FFF700, 0 0 7px #FFF700;
+}
+
+.neon-blue {
+  text-shadow: 0 0 3px #50BFE6, 0 0 5px #50BFE6, 0 0 7px #50BFE6;
+}
+
+.neon-orange {
+  text-shadow: 0 0 3px #FF9933, 0 0 5px #FF9933, 0 0 7px #FF9933;
+}
+
+.neon-red {
+  text-shadow: 0 0 3px #FD0E35, 0 0 5px #FD0E35, 0 0 7px #FD0E35, 0 0 9px #FF355E;
+} 
+
 /*watch display*/ 
 .watch-con {
   display:flex;
