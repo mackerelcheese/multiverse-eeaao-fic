@@ -35,6 +35,26 @@ figure {
   overflow-x: hidden;
 }
 
+/*****************kudos*****************/ 
+#workskin ~ #feedback #kudos_message {
+    font-size: 0;
+}
+  
+#workskin ~ #feedback #kudos_message.notice::after {
+    font-size: 12pt;
+    padding: 10px;
+    display: block;
+    content: "What does it mean to be alive? To participate in acts of creation? Thank you for participating in mine.";
+}
+  
+#workskin ~ #feedback #kudos_message.kudos_error::after {
+    content: "Throughout all this noise, you have found me again. In another life, you have already left kudos here. :)";
+    font-size: 12pt;
+    padding: 10px;
+    display: block;
+}
+
+
 /*--------------------------------------------------------------------------*/
 /*containers + misc*/
 
@@ -385,139 +405,6 @@ position: relative;
     font-weight: 500;
 }
   
-/*ao3 skin on ao3 by deciMae at https://archiveofourown.org/works/58827868*/ 
-  
-h4.heading {
-    font-weight: initial;
-}
-  
-details{
-    margin:initial;
-}
-  
-p.kudos {
-    padding: .5em .5em .5em 60px;
-    margin: 2em 0;
-    min-height: 50px;
-    font-size: 14px;
-}
-  
-.comment-group{
-    display:block;
-}
-  
-ul.actions{
-    margin: initial;
-    padding: initial;
-    padding: .429em .25em .25em 0;
-}
-  
-.actions li{
-    display: initial;
-    margin-inline-start: initial;
-}
-  
-ol.thread{
-    padding: initial;
-    margin: initial;
-}
-  
-li.comment{
-    margin: 0;
-}
-  
-.thread li {
-    list-style-type: none;
-    margin-block:.5em;
-}
-  
-img.icon {
-    width: 100px;
-    margin: 0;
-}
-  
-h3.heading {
-    border-bottom: 1px solid;
-}
-  
-h3.byline {
-    border: 0;
-}
-  
-.preface blockquote {
-    margin-inline-start: initial;
-    padding: initial;
-    border-inline-start: initial;
-}
-  
-  
-h2.title {
-    margin: initial;
-}
-  
-ol.thread li blockquote {
-    padding: initial;
-    border-inline-start: initial;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: .643em;
-    margin-right: .643em;
-}
-  
-h3 a, h4 a {
-    color: #666;
-    text-decoration: none;
-    border-bottom: solid 1px;
-}
-  
-h4.byline{ 
-    text-align: left;
-}
-  
-.work dt {
-    font-weight: initial;
-    display: initial;
-}
-  
-.work dd {
-    display: initial;
-    line-height: initial;
-    margin: 0;
-}
-  
-dl.meta {
-    border: 1px solid #ccc;
-    margin: initial;
-}
-  
-.work ul {
-    margin: initial;
-    padding-bottom: 0.643em;
-}
-  
-dt.stats{
-    float:left;
-}
-  
-dl.stats {
-    margin-left: 1em;
-}
-  
-.stats .stats dd {
-    margin-bottom: 0;
-}
-  
-.wrapper {
-    font-size: .92592em;
-}
-  
-.warning a {
-    font-weight: 700;
-}
-  
-.work > dt {
-    margin-right: -1em;
-}
 
 /*--------------------------------------------------------------------------*/
 /*comic thought text by Demigod of Agni https://archiveofourown.org/works/48774883/chapters/124267306#main*/
