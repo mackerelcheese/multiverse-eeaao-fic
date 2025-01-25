@@ -37,8 +37,12 @@ figure {
 
 .hidelink {
   text-decoration: none !important;  
-  color:white !important; 
+  text-decoration-line: none !important; 
+  text-decoration-style: none !important; 
+  -moz-text-decoration-style: none!important;
+  -moz-text-decoration-line: none !important;
   cursor:grab;
+  color:white !important;
 }
 
 /*****************kudos*****************/ 
@@ -604,7 +608,7 @@ position: relative;
   text-align:center;
   background:black;
   height:1em;
-  width:200px;
+  width:100%;
   margin-left:auto;
   margin-right:auto;
   padding:5px;
@@ -839,7 +843,7 @@ position: relative;
 }
 
 .dbh-textbox {
-  display:block;
+  display:flex;
   min-width:18px;
   padding:5px;
   font-family: monospace, monospace;
@@ -852,6 +856,10 @@ position: relative;
   text-align:center;
   justify-content:center;
   align-content:center;
+}
+
+.dbh-textboximg {
+  width:15px;
 }
 
 /*--------------------------------------------------------------------------*/
@@ -1134,18 +1142,16 @@ hidden when the defails is open.
     height:auto; 
     margin-left:auto;
     margin-right:auto;
-    border-top:2px solid black; 
-    border-bottom:2px solid black; 
+    border-bottom:1px solid black; 
     text-align:center; 
     justify-content:space-evenly;
     align-items:center;
-    
   }
   
   .rs-headericon {
-    padding:15px;
-    height:2.5em;
+    height:2em;
     width:25px;
+    padding:4px;
   }
   
   .rs-logo {
@@ -1153,18 +1159,14 @@ hidden when the defails is open.
     width:auto;
     margin-top:auto;
     margin-bottom:auto;
-    margin-left:5px;
-    margin-right:5px;
   
   }
   .rs-subscribe {
     height:auto;
-    width:30px;
-    padding:15px;
     text-align:center; 
     justify-content:center;
     align-items:center;
-    margin-left:auto;
+    margin-left:0px;
     font-size:0.6em;
   }
   
