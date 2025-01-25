@@ -1,0 +1,30 @@
+figure {
+    margin-left:0px;
+    margin-right:0px;
+}
+
+.viewpanel {
+    width:300px;
+    height:500px;
+    margin-left:auto;
+    margin-right:auto;
+    background: linear-gradient(to bottom, 
+      #392033 0%, 
+      #fd6051 50%, 
+      #ff8967 60%,
+      #fec051 100%); 
+      overflow-y: hidden;
+      overflow-x: hidden;
+      border:1px solid black;
+}
+
+.pages {
+    width:280px;
+    height:480px;
+    background:#f6eee3;
+    display:flex;
+    align-items: end;
+    text-align: right;
+    justify-content: right;
+    padding:10px;
+}
