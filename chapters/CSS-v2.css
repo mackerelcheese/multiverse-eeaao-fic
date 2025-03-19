@@ -1,0 +1,1332 @@
+/*overall styles*/
+figure {
+    margin-right:0px;
+    margin-left:0px;
+    max-width:100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/*--------------------------------------------------------------------------*/
+/*housekeeping*/ 
+.mobilecon {
+    width:300px;
+    margin-left:auto;
+    margin-right:auto;
+    overflow-x: hidden;
+    /*border:1px solid black;*/
+}
+
+.SOB-thought {
+    text-align: right;
+    font-style: italic;
+}
+
+.border-solidbl {
+    border:1px solid black;
+}
+
+.mid-split {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+.hidelink {
+  text-decoration: none !important;  
+  text-decoration-line: none !important; 
+  text-decoration-style: none !important; 
+  -moz-text-decoration-style: none!important;
+  -moz-text-decoration-line: none !important;
+  border: none;
+  cursor:grab;
+  color:white !important;
+}
+
+/*****************kudos*****************/ 
+#workskin ~ #feedback #kudos_message {
+    font-size: 0;
+}
+  
+#workskin ~ #feedback #kudos_message.notice::after {
+    font-size: 12pt;
+    padding: 10px;
+    display: block;
+    content: "What does it mean to be alive? To participate in acts of creation? Thank you for participating in mine.";
+}
+  
+#workskin ~ #feedback #kudos_message.kudos_error::after {
+    content: "Throughout all this noise, you have found me again. In another life, you have already left kudos here. :)";
+    font-size: 12pt;
+    padding: 10px;
+    display: block;
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*containers + misc*/
+
+.flexcon {
+    display:flex;
+    width:100%;
+    height:auto;
+}
+
+.gen-flexcon {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: auto;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.hide {
+    display: none;
+}
+
+.middle {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.img-mid {
+    height:0.80em; 
+    max-width:300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right-txt {
+  text-align: right;
+}
+/*--------------------------------------------------------------------------*/
+/*fonts family*/
+
+.TNR {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.mono {
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+.arial {
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.cursive {
+    font-family: 'Lucida Handwriting', cursive;
+}
+
+.comicsans {
+    font-family: 'Comic Sans MS', cursive;
+  }
+
+/*--------------------------------------------------------------------------*/
+/*font color*/
+
+.txt-purple {
+    color:#7101c9;
+}
+
+.txt-blue {
+    color:blue;
+}
+
+.txt-green {
+    color:greenyellow;
+}
+
+.txt-white {
+    color:white;
+}
+
+/*font size*/
+
+.txt-big {
+    font-size: 1.5em;
+}
+
+/*--------------------------------------------------------------------------*/
+/*font weight*/
+.bolder {
+    font-weight:bold;
+  }
+  
+  .boldest {
+    font-weight:900;
+  }
+  
+  .lighter {
+    font-weight:100;
+  
+  }
+  
+/*--------------------------------------------------------------------------*/
+/*background colours*/ 
+.black-bg {
+    background:#111215;
+}
+   
+.green-bg {
+     background:#023020;
+}
+   
+.red-bg {
+    background: #FF0000;
+}
+   
+.brown-bg {
+     background: #654321;
+}
+   
+.silver-bg {
+     background:#C0C0C0;
+}
+   
+   
+/*--------------------------------------------------------------------------*/
+/*color text gradients by Goddess_of_the_arena  https://archiveofourown.org/works/51309787/chapters/143392030#workskin and https://archiveofourown.org/works/58623079/chapters/149366104*/  
+
+
+.textgr-bluegreen {
+    background: linear-gradient(to right, #8F0FFF 0%, #05C1FF 25%, #00FF00 50%, #05C1FF 75%, #8F0FFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.textgr-rainbow {
+    background: linear-gradient(to right, #F8295A 0%, #FFA500 25%, #EAE326 40%, #37EA1B 60%, #2A97EA 80%, #B926F8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.textgr-psy {
+    background: linear-gradient(to right,#ff1daa 0%, #5fbeff 25%, #6bd13e 40%, #ff9500 60%, #2A97EA 80%, #fdff00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.textgr-huff {
+  background: linear-gradient(to right,#ecb939 0%, #f0c75e 25%, #726255 50%, #372e29 75%, #000000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.textgr-sly {
+  background: linear-gradient(to right, #dbdddc 0%,	#acadaf 25%,	#0a090e 50%,	#1e7352 75%, #1c4a26 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.textgr-gryff {
+  background: linear-gradient(to right, #5c0000 0%, #890000 25%,  #c50000 50%,	#fb7e00 75%,	#ffa700 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.textgr-rav {
+  background: linear-gradient(to right, #21a8d5 0%, #1d72b4 25%,	#e89d41 50%,	#f2dba5 75%, #573817 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.textglow-halo {
+  color:white;
+  text-shadow:
+    0 0 3px black,
+    0 0 15px #ff9f5e,
+    0 0 21px #ff9f5e,
+    0 0 42px #ff8b4c,
+    0 0 82px #ff8b4c,
+    0 0 92px #d89b3d,
+    0 0 102px #e5ad25,
+    0 0 151px #e5ad25;
+}
+
+/*--------------------------------------------------------------------------*/
+/*letter spacing*/
+
+.l-squash {
+    letter-spacing: -2px;
+}
+
+.l-strech1 {
+    letter-spacing: 2px;
+}
+
+.l-strech2 {
+    letter-spacing: 3px;
+}
+
+.l-strech3 {
+    letter-spacing: 5px;
+}
+
+.l-strech4 {
+    letter-spacing: 8px;
+}
+
+/*--------------------------------------------------------------------------*/
+/*inspired by and adapted from  glitch text by goddess of arena https://archiveofourown.org/works/57728626?view_full_work=true#main */ 
+
+.gt-head {
+position: relative; 
+}
+  
+.gt-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   margin: 0;
+} 
+
+.gt-vertical {
+    writing-mode: vertical-lr;
+    margin-left:50%;
+}
+
+.gt-upsidedown {
+    transform: rotate(180deg);
+    text-align: center;
+}
+
+/*split  text*/
+
+  .tiltcon {
+    display: flex;
+    align-items:center;
+    width: 50%;
+    height:5em;
+    position:relative;
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+  }
+  
+  .tilt-R {
+    transform: rotate(30deg);
+    padding-left:2em;
+    position:absolute;
+  } 
+  
+  .tilt-L {
+    transform: rotate(-30deg);
+    text-align:right;
+    padding-right:2em;
+    position:absolute;
+    right:0px;
+  }  
+
+
+/*--------------------------------------------------------------------------*/
+/*split screens*/ 
+  
+.eqcol-left {
+    flex: 50%;
+    padding: 10px;
+    border-right: 1px solid;
+}
+  
+.eqcol-right {
+    flex: 50%;
+    padding: 10px;
+}
+
+.b-green {
+    border-right: 1px solid rgb(82, 209, 32);
+}
+
+.b-yellow {
+    border-right: 1px solid yellow;
+}
+
+.b-red {
+    border-right: 1px solid red;
+}
+
+.b-greenyellow {
+    border-image: linear-gradient( rgb(82, 209, 32) 0%, yellow 100%);
+    border-image-slice: 1;
+}
+
+.b-yellowred {
+    border-image: linear-gradient( yellow 0%, red 100%);
+    border-image-slice: 1;
+}
+
+/*--------------------------------------------------------------------------*/
+/*base boss kirby by spookytesting at https://archiveofourown.org/works/38129254/chapters/95252452#workskin*/
+
+.ksa-boss {
+    background-color: #ef009b;
+    box-shadow: -9px -14px 0 #7101c9, 8px 8px 0 rgba(0, 0, 0, 0.5);
+    margin: 40px auto 30px;
+    padding: 5px 20px 0px;
+    transform: skew(-10deg);
+    width: max-content;
+    max-width: 80%;
+}
+  
+.ksa-boss br {
+    display: none;
+}
+  
+.ksa-boss p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+  
+.ksa-boss span:first-of-type {
+    color: white;
+    display: block;
+    font-size: 1.2em;
+    font-family: "Forte", "Silom", "Lucida Grande";
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: -17.5px;
+    text-shadow: 2px 2px #7101c9;
+    transform: skew(10deg);
+    position: relative;
+    right: 6px;
+    bottom: 16.5px;
+    width: 100%;
+}
+  
+.ksa-boss span:last-of-type {
+    color: #3f1da5;
+    display: inline-block;
+    font-family: "Impact", "Franklin Gothic Condensed", "Lucida Grande";
+    font-size: 2.3em;
+    line-height: 1.1;
+    margin: 6px auto 8px;
+    text-shadow: 2px 2px white;
+    transform: skew(10deg);
+}
+  
+.ksa-boss b {
+    font-weight: 500;
+}
+  
+
+/*--------------------------------------------------------------------------*/
+/*comic thought text by Demigod of Agni https://archiveofourown.org/works/48774883/chapters/124267306#main*/
+
+.thoughtread {
+    color: black;
+    font-size: 0.9em;
+    transform: skew(-3deg);
+    font-family: marker felt, comic sans ms, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+    white-space: wrap;
+    max-width: auto;
+    position: relative;
+    background: url(https://static.vecteezy.com/system/resources/previews/012/994/584/non_2x/yellow-halftone-texture-background-vector.jpg) center center repeat;
+    background-size: 200px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    box-shadow: 1.5px 1px black;
+}
+
+/*--------------------------------------------------------------------------*/
+/*deadpool thinking boxes by La_Temperanza https://archiveofourown.org/collections/A_Guide_to_Coding_and_Fanworks/works/4384112*/
+
+.dp-ybox {
+    background-color: #fff799;
+    background: radial-gradient(circle, #fffeee, #fffbcc, #fff799);
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right:auto;
+    padding-top: 2px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    font-family: "Comic Sans MS", "Chalkboard SE", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    display: table;
+    color: #000000;
+}
+  
+.dp-wbox {
+    background-color: #ffffff;
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+    margin-left: 0px;
+    padding-top: 2px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    font-family: "Courier New", Courier;
+    text-align: center;
+    font-size: medium;
+    display: table;
+    color: #000000;
+}
+
+/*--------------------------------------------------------------------------*/
+/*hp tick*/
+
+.hp-boxbox {   
+    display:flex;
+    width:100%
+}
+
+.hp-box {
+    display:flex;
+    width:auto;
+    height:auto;
+    padding:3px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.hp-img1 {
+    width:1.5em;
+    height: 1.5em;
+    padding:0px;
+}
+
+.hp-img2 {
+    width:1.5em;
+    height: 1.5em;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    padding:0px;
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*tattoo tick*/
+
+.tattoo-tick {
+    text-shadow: 2px 2px #FF0000;
+    font-size:2em;
+    font-weight:bold;
+    text-align:center;
+  }
+
+  /*--------------------------------------------------------------------------*/
+/*red pill blue pill*/
+
+.red-pill {
+    display:block;
+    border-radius: 15px;
+    padding:5px;
+    margin:10px;
+    background-color: red;
+    width: 5em;
+    height:auto;
+    text-align:center;
+   color:white;
+   font-weight:bold;
+   text-wrap: wrap;
+   margin-left: auto;
+   margin-right: auto;
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+   text-decoration: none !important;
+ }
+
+ .blue-pill {
+     display:block;
+    border-radius: 15px;
+    padding:5px;
+    margin:10px;
+    background-color: blue;
+    width: 5em;
+    height:auto;
+    text-align:center;
+   color:white;
+   font-weight:bold;
+   text-wrap: wrap;
+   margin-left: auto;
+   margin-right: auto;
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+ }
+
+ /*--------------------------------------------------------------------------*/
+ /*wiggle tick*/
+ .wiggle {
+    max-width:300px;
+    font-size:1.5em;
+  }
+
+/*--------------------------------------------------------------------------*/
+/*fade by jihnari*/
+.fadeout {
+  position: relative;
+}
+.fadeout::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(255,255,255, 0), white);
+}
+
+
+.fadein {
+  position: relative;
+}
+.fadein::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(to bottom, white, rgba(255,255,255, 0));
+}
+.text-color-gray {
+  color: #9F9FA1;
+}
+.text-size-12{
+  font-size:1.2em;
+}
+
+/*--------------------------------------------------------------------------*/
+/*neon tick*/
+
+.neon-tick { 
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:black;
+  height:1em;
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+  padding:5px;
+  font-family:Brush Script MT, Brush Script Std, cursive;
+  text-align:center;
+  font-size:3em;
+  color: white;
+}
+
+.neon-pink {
+  text-shadow: 0 0 3px #FF6EFF, 0 0 5px #FF6EFF, 0 0 7px #FF6EFF;
+}
+
+.neon-yellow {
+  text-shadow: 0 0 3px #FFFF66, 0 0 5px #FFF700, 0 0 7px #FFF700;
+}
+
+.neon-blue {
+  text-shadow: 0 0 3px #50BFE6, 0 0 5px #50BFE6, 0 0 7px #50BFE6;
+}
+
+.neon-orange {
+  text-shadow: 0 0 3px #FF9933, 0 0 5px #FF9933, 0 0 7px #FF9933;
+}
+
+.neon-red {
+  text-shadow: 0 0 3px #FD0E35, 0 0 5px #FD0E35, 0 0 7px #FD0E35, 0 0 9px #FF355E;
+} 
+
+/*watch display*/ 
+.watch-con {
+  display:flex;
+  width: 150px;
+  height:150px; 
+  padding:3px;
+  border:5px solid #C0C0C0;
+  margin-right: auto;
+  margin-left:auto;
+  border-radius: 30px;
+  color: #6ACF65;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  word-wrap: break-word;
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), 0 4px 6px rgba(0,0,0,0.45);
+  overflow:hidden;
+  flex-direction: column;
+  font-size:1.2em;
+  font-family: monospace, monospace;
+} 
+
+
+.watch-button{
+  display:flex;
+  height: 2em;
+  width: 3em;
+  padding: 5px;
+  border-radius:5px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background: #6ACF65;
+  transition: 0.5s;
+ } 
+   
+.watch-redglow {
+   box-shadow: #FF0000 0px 5px 35px;
+}
+   
+.watch-redglow:hover {
+     background:#FF0000;
+     box-shadow: 0 0 0 30px #FF0000,
+                 0 0 0 60px #FF0000,
+                 0 0 0 100px #FF0000,
+                 0 0 0 120px #FF0000,
+                 0 0 0 200px #FF0000;
+}
+   
+.watch-yellowglow {
+    box-shadow: yellow 0px 5px 35px;
+}
+    
+.watch-yellowglow:hover {
+      background:yellow;
+      box-shadow: 0 0 0 30px #ffff00,
+                  0 0 0 60px yellow,
+                  0 0 0 100px yellow,
+                  0 0 0 120px yellow,
+                  0 0 0 200px yellow;
+}
+
+.watch-greenglow {
+    box-shadow: #023020 0px 5px 35px;
+}
+    
+.watch-greenglow:hover {
+    color:white;  
+    background:#023020;
+    box-shadow: 0 0 0 30px #023020,
+                0 0 0 60px #023020,
+                0 0 0 100px #023020,
+                0 0 0 120px #023020,
+                0 0 0 200px #023020;
+}
+
+
+.watch-strap{
+     display:flex; 
+     height:100px; 
+     width:75px; 
+     margin-right: auto;
+     margin-left:auto;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     color:white;
+     box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), 0 4px 6px rgba(0,0,0,0.45)
+}
+   
+.gps-pin {
+    display:block; 
+    height:100px;
+    max-width:300px; 
+    margin-left: auto;
+    margin-right:auto;
+}
+
+/*--------------------------------------------------------------------------*/
+/*Jump map*/
+
+.jump-con-green {
+  display: block; 
+  border: 2px solid green;
+  width:9em;
+  height:auto;
+  padding:5px;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.jump-con-yl {
+  display: block; 
+  border: 2px solid yellow;
+  width:9em;
+  height:auto;
+  padding:5px;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.jump-line-g {
+  display:block;
+  width:50%;
+  height:6em;
+  margin-left:0px;
+  border-right:4px solid green;
+}
+
+.jump-line-y {
+  display:block;
+  width:50%;
+  height:6em;
+  margin-left:0px;
+  border-right:4px solid yellow;
+  
+}
+
+.jump-line-r {
+  display:block;
+  width:50%;
+  height:6em;
+  margin-left:0px;
+  border-right:4px solid red;
+}
+
+.jump-linegr-g {
+  display:block;
+  width:50%;
+  height:6em;
+  margin-left:0px;
+  border-right:4px solid;
+  border-image: linear-gradient(to bottom, green 0%, yellow 100%);
+  border-image-slice: 1;  
+}
+
+.jump-linegr-y {
+  display:block;
+  width:50%;
+  height:6em;
+  margin-left:0px;
+  border-right:4px solid;
+  border-image: linear-gradient(to bottom, yellow 0%, red 100%);
+  border-image-slice: 1;  
+}
+
+.jump-con-red {
+  display: block; 
+  border: 2px solid red;
+  width:9em;
+  height:auto;
+  padding:5px;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/*--------------------------------------------------------------------------*/
+/*dbh tick*/
+
+.dbh-box {
+  display:block;
+  width:300px;
+  height:auto;
+  margin-left:auto;
+  margin-right:auto;
+  /*border:1px solid black;*/
+  font-size:1em;
+}
+
+.dbh-optionrow {
+  display:flex; 
+  height:auto;
+  width:300px;
+  /*border:1px solid black;*/
+  justify-content:center;
+  margin-top:1.5px;
+  margin-bottom:1.5px;
+}
+
+.dbh-textbox {
+  display:flex;
+  min-width:18px;
+  padding:5px;
+  font-family: monospace, monospace;
+  color:white;
+  margin-right:2px;
+  font-size:0.9em; 
+  background-color:#808080;
+  list-style: none;
+  font-size:1em;
+  text-align:center;
+  justify-content:center;
+  align-content:center;
+}
+
+.dbh-textboximg {
+  width:15px;
+}
+
+/*--------------------------------------------------------------------------*/
+/* twitter, with threads https://archiveofourown.org/works/35006431 */
+
+.tw {
+  max-width: 500px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 20px auto;
+  border-style: solid;
+  border-width: .1em;
+  border-color: lightgray;
+  padding: 1em;
+}
+
+.tw-table {
+  table-layout: fixed;
+  vertical-align: top;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tw-td-icon {
+  width: 45px;
+  height: 45px;
+}
+
+.tw-td-thread {
+  border-left-style: solid;
+  border-color: rgb(207, 217, 222);
+  border-width: 2px;
+}
+
+.tw-icon-img {
+  width: 45px;
+  height: 45px;
+  float: left;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.tw-post-verified {
+  height: 1em;
+  padding-left: 0.2em;
+  position: relative;
+  top: 0.1em;
+  content: url("https://i.imgur.com/2oTuVdz.png");
+}
+
+.tw-post {
+  overflow: hidden;
+  padding-left: 0.5em;
+}
+
+.tw-post-meta-user {
+  font-weight: bold;
+}
+
+.tw-post-meta-handle {
+  color: slategray;
+}
+
+.tw-post-meta-time {
+  color: slategray;
+}
+
+.tw-post-meta-time:before {
+  content: '\0B7';
+  padding-right: 0.2em;
+}
+
+.tw-embed {
+  border-style: solid;
+  border-width: .1em;
+  border-color: darkgray;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+img.tw-embed
+{
+  width: 85%;
+}
+
+.tw-ref {
+  color: rgb(29, 155, 240);
+  cursor: pointer;
+}
+
+.tw-reply {
+  color: slategray;
+}
+
+
+.tw-share details {
+  display: flex;
+  width: 100%;
+  margin: 10px auto;
+  height: 20px;
+}
+
+/* 
+.tw-show-open is displayed when the details is open, 
+hidden when the deatils is closed.
+.tw-show-close is displayed when the deatils is closed
+hidden when the defails is open.
+*/
+.tw-share details[open] .tw-show-open,
+.tw-share details:not([open]) .tw-show-close
+{
+  display: flex;
+}
+
+.tw-share details[open] .tw-show-close,
+.tw-share details:not([open]) .tw-show-open
+{
+  display: none;
+}
+
+
+.tw-share {
+  /* background-image: url("https://64.media.tumblr.com/d46b27345c9cea4790756a57e42ccb6c/f2497834d8606ba7-ad/s500x750/10e4a6e3ba606786d94c2d1ddb099bf2516fd704.png"); */
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  width: 100%;
+  min-height: 25px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 6px !important;
+  position: relative;
+}
+
+.tw-share-icon {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  width: 100%;
+  min-height: 20px;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+}
+
+.tw-share-quotes {
+  background-image: url("https://i.imgur.com/HOvzkw7.png");
+  padding-left: 25px;
+  background-position-y: -1px;
+}
+
+.tw-share-quotes.tw-show-open {
+  background-image: url("https://i.imgur.com/xBcBsT9.png");
+}
+
+.tw-share-retwts {
+  background-image: url("https://i.imgur.com/uOLZWeh.png");
+  background-position-y: -1px;
+  padding-left: 27px;
+}
+
+.tw-share-retwts.tw-show-open {
+  background-image: url("https://i.imgur.com/hlKje5j.png");
+}
+
+.tw-share-hearts {
+  background-image: url("https://i.imgur.com/s6gMzzW.png");
+  background-position-y: -1px;
+  padding-left: 27px;
+}
+
+.tw-share-hearts.tw-show-open {
+  background-image: url("https://i.imgur.com/L0R5oMT.png");
+}
+
+.tw-share-links {
+  background-image: url("https://i.imgur.com/WMCCktQ.png");
+  background-position-y: -4px;
+  padding-left: 25px;
+}
+
+.tw-share-links.tw-show-open {
+  background-image: url("https://i.imgur.com/rcwDeZu.png");
+}
+
+.tw-td-rt-1 {
+  width: 45px;
+  background-image: url("https://64.media.tumblr.com/a926f84106d9146ffdff9f264bb67e1f/f2497834d8606ba7-e9/s75x75_c1/1db007980d847c8aa07beb1b230a398652a3a340.png");
+  background-repeat: no-repeat;
+  background-size: 1em;
+  background-position-x: right;
+  background-position-y: center;
+  padding-bottom: 0.2em;
+}
+
+.tw-td-rt-2 {
+  padding-left: 0.5em;
+  padding-bottom: 0.2em;
+}
+
+.tw-rt {
+  color: rgb(83, 100, 113);
+  font-weight: bold;
+  font-size: small;
+}
+
+.tw p {
+  margin: 0;
+}
+
+.tw-share details > summary {
+    list-style: none;
+}
+
+.tw-share details summary::-webkit-details-marker,
+.tw-share details summary::marker {
+  display: none;
+}
+/*--------------------------------------------------------------------------*/
+
+/*Overlay text by infinity wraith*/
+
+.overlappingtexttop {
+  position: relative;
+}
+
+.overlappingtextbottom {
+  position: absolute;
+  opacity: 15%;
+  top:-28px;
+  bottom:0px;
+  left: 20px;
+}
+
+/*--------------------------------------------------------------------------*/
+/*exploding text*/
+
+.explode-con { 
+  max-width:300px;
+  max-height: 300px;
+  height: auto;
+  display: flex;
+  margin-left:auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  flex-direction: column; 
+  background: transparent; 
+  transition: 0.8s;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+     
+.explode-r:hover {
+    background: #FC0019;
+    color:white;
+    box-shadow: 0 0 0 30px #FC0019,
+              0 0 0 60px #FC0019,
+              0 0 0 100px #FC0019,
+              0 0 0 120px #FC0019,
+              0 0 0 200px #FC0019 
+}
+          
+.explode-bl:hover {
+    background: black;
+    color:black;
+    box-shadow: 0 0 0 30px black,
+                0 0 0 60px black,
+                0 0 0 100px black,
+                0 0 0 120px black,
+                0 0 0 200px black; 
+  }
+
+/*--------------------------------------------------------------------------*/
+/*rolling stone*/
+  .rs-headercon {
+    display:flex; 
+    width:300px; 
+    height:auto; 
+    margin-left:auto;
+    margin-right:auto;
+    border-bottom:1px solid black; 
+    text-align:center; 
+    justify-content:space-evenly;
+    align-items:center;
+  }
+  
+  .rs-headericon {
+    height:2em;
+    width:25px;
+    padding:4px;
+  }
+  
+  .rs-logo {
+    height:2em;
+    width:auto;
+    margin-top:auto;
+    margin-bottom:auto;
+  
+  }
+  .rs-subscribe {
+    height:auto;
+    text-align:center; 
+    justify-content:center;
+    align-items:center;
+    margin-left:0px;
+    font-size:0.6em;
+  }
+  
+  .rs-flair {
+    display:block;
+    width:fit-content;
+    height:auto;
+    max-width:300px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:15px;
+    margin-bottom:15px;
+    padding: 5px; 
+    background: red;
+    color: white;
+    font-weight: bold;
+    font-size:1em;
+    white-space: nowrap;
+    font-weight:bold;
+  }
+  
+  .rs-thumb {
+    width:290px;
+    height:auto;
+    margin-left:2px;
+    margin-right:2px;
+    margin-top:0px;
+    margin-bottom:0px;
+    border:3px solid black;
+  }
+  
+  .rs-title {
+    text-align:center;
+    font-size:1.7em; 
+    text-align:center;
+    margin-left:20px;
+    margin-right:20px;
+  }
+  
+  .rs-subtitle {
+    text-align:center;
+    font-size:1.3em;
+    text-align:center;
+    margin-left:40px;
+    margin-right:40px;
+  }
+  
+  .rs-credits {
+   text-align:center;
+   font-size:1em;
+   margin-top:2px;
+   margin-bottom:2px;
+  }
+  
+  .rs-1p {
+   margin-left:10px;
+   margin-right:10px;
+  }
+  
+  .rs-1p:first-letter {
+      float: left;
+      font-size: 60px;
+      line-height: 1;
+      font-weight: bold;
+      margin-right: 9px;
+  }
+  
+  .rs-p {
+    margin-left:10px;
+    margin-right:10px;
+   }
+  
+/*box*/
+.container2 {
+  height:100px;
+  width:300px;
+  margin-left: auto;
+  margin-right:auto;
+  /*border:1px solid green;*/
+}
+
+.face2 {
+  border: 2px solid black;
+  color:black;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+  border:1px solid black; 
+  background:#C08F4F;
+}
+
+.front2{
+  height:75px;
+  width:175px;
+}
+
+.right2{
+  height:75px;
+  width:90px;
+  transform: rotateY(0deg) skewY(-15deg) translate(176px, 35px);
+}
+
+.top2 {
+  height:24px;
+  width:172px;
+  transform: rotateY(0deg) skewX(-75deg) translate(-45px, -24.6px);
+}
+
+/************************************/
+/*red nose*/
+
+.rednose-con {
+  display: inline;
+  position:relative;
+}
+
+.rednose-circle {
+  display:inline-flex;
+  height:50px;
+  width:50px;
+  background-color: red;
+  color:white;
+  border-radius: 50%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+/*bubble bullets*/
+
+
+.bubble {
+  position:absolute;
+  width: auto;
+  height: auto;
+  border: 3px transparent;
+  padding:2px;
+  border-radius: 50%;
+  background-image: linear-gradient(white, white), 
+                    linear-gradient(to right, purple, pink);
+  background-origin: border-box;
+  background-clip: content-box, border-box; 
+}
+
+.oops1 {
+  transform: translate(2px,-2px);
+}
+.oops2 {
+  transform: translate(25px,18px);
+}
+
+.oops3 {
+  transform: translate(60px,8px);
+}
